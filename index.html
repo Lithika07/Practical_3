@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-Shop</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <h2 class="logo">E-Shop</h2>
+            <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li class="cart">🛒 Cart (<span id="cart-count">0</span>)</li>
+            </ul>
+        </nav>
+
+        <!-- PRODUCTS -->
+        <section class="products">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+                alt="Watch">
+                <h3>Smart Watch</h3>
+                <p>₹<span class="price">2999</span></p>
+                <button onclick="addToCart(2999)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSftlXP1kZFcsG20SFpH078
+                    CYhq8TIC5YXwR5YddaBVguLv_H9e3WmQCj-U2-v21bhfWQ-NtzO9NNTkcRw3ChKcXyiEOEOu59PUIR4dt6P
+                    6l9hgyiKKElR9" alt="Shoes">
+                <h3>Running Shoes</h3>
+                <p>₹<span class="price">3999</span></p>
+                <button onclick="addToCart(3999)">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796"
+                alt="Makeup">
+                <h3>Makeup</h3>
+                <p>₹<span class="price">1999</span></p>
+                <button onclick="addToCart(1999)">Add to Cart</button>
+            </div>
+        </section>
+        
+    <!-- TOTAL PRICE -->
+    <div class="total">
+        Total Amount: ₹<span id="total-price">0</span>
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>
